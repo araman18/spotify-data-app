@@ -2,13 +2,15 @@
 
 A Flask web app that allows sptotify users to view detailed information and statistics about their usage data. Also features an audio analysis and personality classification based on the user's top songs, deployed with Microsoft Azure.
 
-Utilizes the Spotify Web API for authentication and data collection, and uses sklearn's Decision Tree Classifier for the personality classficiation.
+Utilizes the Spotify Web API for authentication and data collection, uses sklearn's Decision Tree Classifier for the personality classficiation, uses Matplotlib/seaborn for creating the graphs.
 
 <h2>Links<h2>
   
  - https://developer.spotify.com/documentation/web-api/
   
  - https://scikit-learn.org/stable/modules/tree.html
+ 
+ - https://seaborn.pydata.org/
 
 
 ## Run Commands
