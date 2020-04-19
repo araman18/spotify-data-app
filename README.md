@@ -52,5 +52,5 @@ Utilizes the Spotify Web API for authentication and data collection, and uses sk
    - Run "pip install -r requirements.txt" to install all the required dependancies, or  "pipenv install -r requirements.txt" if you are using a pipenv. 
    
    -  If all of the dependancies have been installed, run python app.py to run the Flask app locally.
-   
-    
+
+      
