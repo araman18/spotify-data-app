@@ -14,7 +14,7 @@ Utilizes the Spotify Web API for authentication and data collection, and uses sk
 ## Run Commands
    ## How to run locally
    
-   - You must make a few changes to the code before attempting to run it locally, the following changes are in app.py
+   - You must make a few changes to the code before attempting to run it locally, the following changes are at the beginning of app.py.
     
     
     '''
@@ -26,4 +26,27 @@ Utilizes the Spotify Web API for authentication and data collection, and uses sk
     # redirect_uri = "http://127.0.0.1:8000/home"
     '''
     
-   - uncomment the local redirect url and comment out the azurewebsites redirect urls
+   - Uncomment the local redirect url and comment out the azurewebsites redirect urls, it should look like this when finished.
+    
+    '''
+    # Redirect uri and authorization scopes
+    #redirect_uri = "https://myspotifydata.azurewebsites.net/home"
+    scope = "user-top-read user-read-recently-played playlist-read-collaborative playlist-read-private"
+
+    # UNCOMMENT TO USE FOR LOCAL TESTING
+    redirect_uri = "http://127.0.0.1:8000/home"
+    '''
+    
+    
+    
+   - Additionally, you must uncomment the following block of code at the end of app.py.
+   
+   '''
+    """
+    Run the server (uncomment for local testing)
+     if __name__ == "__main__":
+       app.run(debug=True, port=8000)
+    """
+   
+   '''
+    
