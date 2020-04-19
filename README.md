@@ -40,13 +40,17 @@ Utilizes the Spotify Web API for authentication and data collection, and uses sk
     
     
    - Additionally, you must uncomment the following block of code at the end of app.py.
+    
+    '''
+    # # Run the server (uncomment for local testing)
+    # if __name__ == "__main__":
+    #    app.run(debug=True, port=8000)
+    '''
+    
+    
+    
+   - Run "pip install -r requirements.txt" to install all the required dependancies, or  "pipenv install -r requirements.txt" if you are using a pipenv. 
    
-   '''
-    """
-    Run the server (uncomment for local testing)
-     if __name__ == "__main__":
-       app.run(debug=True, port=8000)
-    """
+   -  If all of the dependancies have been installed, run python app.py to run the Flask app locally.
    
-   '''
     
